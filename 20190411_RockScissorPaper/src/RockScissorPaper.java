@@ -27,7 +27,7 @@ public class RockScissorPaper {
 		//0: ºñ±è
 		//1: »ç¿ëÀÚ°¡ ÀÌ±è
 		int result=0;
-		if( (p+1)%3 ==c ) {
+		if( (p+1)%3 ==c %3 ) {
 			result=1;
 		}
 		else if(p==c) {
