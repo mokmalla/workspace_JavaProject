@@ -24,6 +24,8 @@ public class GUITest4_ImageIcon {
 		ImageIcon smallKiryu = new ImageIcon(Kiryu.getImage()
 				.getScaledInstance(100, 100, Image.SCALE_DEFAULT));
 		JButton imageButton = new JButton(smallKiryu);
+		imageButton.setRolloverIcon(kirby); //마우스 올리면
+		imageButton.setPressedIcon(Kiryu);  //마우스 클릭하면
 		
 		panel.add(imageLabel);
 		panel.add(imageButton);
